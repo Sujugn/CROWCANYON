@@ -14,14 +14,17 @@ export default function Cart() {
     
 
   return (
-    <div>
+    <div style={{display:"flex", flexDirection:"row-reverse"}}>
+      <div>
+        <p style={{textAlign:"left",borderBottom:"2px solid black"}}>결제내역</p>
     <h2><span style={{color:'blue',fontWeight:'bold'}}>{getUser}</span>님의 장바구니</h2>
     {/* <button onClick={()=>dispatch(changeName())}>닉네임보이기
     </button> */}
     <button onClick={()=>dispatch(changeName('박철수'))}>이름변경
     </button>
-    <h1>현재 담은 상품 갯수: {state.cart.totalCount}개</h1>
-    <h3>현재 상품 총가격: {state.cart.totalPrice}</h3>
+    <p>총수량: {state.cart.totalCount}개</p>
+    <h3>총금액: {state.cart.totalPrice}</h3>
+    </div>
     <Table striped bordered hover>
     <thead>
       <tr>

@@ -73,7 +73,8 @@ function App() {
               <img
                 src={process.env.PUBLIC_URL + "/images/visual_main_01.png"}
                 alt="vm"
-                style={{ height: 700 }}
+                style={{ height: 700, position:"relative" }}
+              
               />
               <h2 style={{ marginTop: 30 }}>베스트 셀러</h2>
               <Row>

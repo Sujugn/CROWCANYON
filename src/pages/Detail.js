@@ -21,11 +21,11 @@ export default function Detail(props) {
         alignItems: "center",
       }}
     >
-      <img src={bests[id].image} alt="detail_img" style={{ width: 500 }} />
+      <img src={bests[id].image} alt="detail_img" style={{ width: 800 }} />
 
-      <section>
+      <section style={{margin:10}}>
         <h4>{bests[id].title}</h4>
-        <p>{KrWon.format(bests[id].price)}</p>
+        <p style={{fontWeight:"bold"}}>{KrWon.format(bests[id].price)}</p>
 
         <div>
           <span>상세설명</span>
@@ -50,7 +50,6 @@ export default function Detail(props) {
               color: "white",
               border: "1px solid black",
               borderRight: "none",
-              marginRight: 10,
             }}
             onClick={() => {
               dispatch(
@@ -74,7 +73,7 @@ export default function Detail(props) {
               border: "1px solid black",
             }}
           >
-            구매하기
+            Buy it now
           </button>
         </div>
       </section>

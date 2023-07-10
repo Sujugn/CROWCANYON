@@ -58,10 +58,16 @@
 }
 
 .cart_btn {
-  width: 280px;
+  width: 130px;
   border: none;
-  background-color: #333;
-  color: white;
-  height: 30px;
+  border: 1px solid #333;
+  color: #333;
+  background-color: white;
+  height: 40px;
   font-size: 13px;
+  transition: all 0.3s;
+}
+
+.cart_btn:hover {
+  background-color: #f1f1f1;
 }
